@@ -10,13 +10,14 @@ router.get('/', function(req, res, next) {
 });
 
 router.post('/form', (req, res, next) => {
-  console.log('Entered askdja;klasvkdnsdsnnvjadsnfjnasdjvadjsnfwenujnudsvnj j');
+  // console.log('Entered askdja;klasvkdnsdsnnvjadsnfjnasdjvadjsnfwenujnudsvnj j');
   var user = new User();
   user.userDetails = {};
   user.userDetails.fullName = req.body.fullName;
   user.userDetails.email = req.body.email;
   user.userDetails.organization = req.body.organization;
   user.save();
+  res.send('Thanks')
   // res.redirect('/html/index.html');
 })
 

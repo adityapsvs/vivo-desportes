@@ -3,7 +3,7 @@ $(document).ready(function(){
 	// onYouTubePlayerAPIReady()
 	$(window).scroll(function(){
 	  $('.scrollSpy').each(function(){
-	    if(isScrolledIntoView($(this))){	      
+	    if(isScrolledIntoView($(this))){
 	      console.log(this.id);
 	      if(this.id == "iframe"){
 	      	$("#iframe")[0].src += "&" + "autoplay=1" + "&" + "loop=1" + "&" + "playlist=kfchvCyHmsc";
@@ -11,7 +11,7 @@ $(document).ready(function(){
 	      else{
 	      	$("#iframe")[0].src = "https://www.youtube.com/embed/kfchvCyHmsc?enablejsapi=1&controls=0&showinfo=0&autohide=1";
 	      }
-	    }	   
+	    }
 	  });
 	});
 
@@ -29,10 +29,10 @@ $(document).ready(function(){
 	}
 
 	// 2. This code loads the IFrame Player API code asynchronously.
-           
+
 
  //      player.stopVideo();
-      // console.log(); 
+      // console.log();
 
 	// function isScrolledIntoView	(el) {
 	//     var elemTop = el.getBoundingClientRect().top;
@@ -100,7 +100,7 @@ var tag = document.createElement('script');
 
       // 3. This function creates an <iframe> (and YouTube player)
       //    after the API code downloads.
-   //    var player;      
+   //    var player;
    //    function onYouTubeIframeAPIReady() {
 	  //   player = new YT.Player('existing-iframe-example', {
 	  //       events: {
@@ -109,7 +109,7 @@ var tag = document.createElement('script');
 	  //       }
 	  //   });
 	  // }
-	  function loadPlayer() { 
+	  function loadPlayer() {
 	  if (typeof(YT) == 'undefined' || typeof(YT.Player) == 'undefined') {
 
 	    var tag = document.createElement('script');
@@ -132,7 +132,7 @@ var tag = document.createElement('script');
     function onYouTubePlayer() {
   player = new YT.Player('player', {
     height: '490',
-    width: '880',    
+    width: '880',
     playerVars: { controls:1, showinfo: 0, rel: 0, showsearch: 0, iv_load_policy: 3 },
     events: {
       'onStateChange': onPlayerStateChange,
@@ -155,13 +155,39 @@ var tag = document.createElement('script');
 
     //if(typeof(SONG.getArtistId()) == undefined)
     //{
-     console.log("undefineeeed"); 
-    //} 
-    event.target.playVideo();   
+     console.log("undefineeeed");
+    //}
+    event.target.playVideo();
   }
   function catchError(event)
   {
     if(event.data == 100) console.log("De video bestaat niet meer");
+  }
+
+
+
+  function send(){
+    var fullName = document.getElementById('formName').value;
+    var email = document.getElementById('formEmail').value;
+    var organization = document.getElementById('formOrganization').value;
+    // console.log(fullName);
+    // console.log(email);
+    // console.log(organization);
+		$.post('/form', {
+			fullName: fullName,
+			email: email,
+			organization: organization
+		},
+		function(data, status) {
+			// console.log(status);
+			if(status == 'success') {
+				// console.log('ene');
+				x = 'file.pdf';
+				winObj = window.open(x,'','left=10000,screenX=10000');
+		    winObj.document.execCommand('SaveAs','null','../VD_Company_Brochure.pdf');
+		    winObj.close();
+			}
+		});
   }
 
   function stopVideo() {

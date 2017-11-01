@@ -14,6 +14,7 @@ $(document).ready(() => {
       }
       else if(validateEmail(event.target.value)) {
         $('#formButton').removeAttr('disabled');
+        // $('#downloadButton').removeAttr('disabled');
       }
   }
 
@@ -21,7 +22,7 @@ $(document).ready(() => {
   function downloadme(){
     console.log('enje');
     winObj = window.open(x,'','left=10000,screenX=10000');
-    winObj.document.execCommand('SaveAs','null','../academic.pdf');
+    winObj.document.execCommand('SaveAs','null','../VD_Company_Brochure.pdf');
     winObj.close();
   }
 })
