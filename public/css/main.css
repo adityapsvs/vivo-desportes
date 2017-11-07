@@ -14,7 +14,7 @@
     - header
     - services
     - video
-    - testimonials
+    - teamMembers
     - blog posts
 	- footer
 
@@ -427,32 +427,32 @@ header.dark nav ul li a:hover{
 
 
 
-/*    testimonials    */
-.testimonials{
+/*    teamMembers    */
+.teamMembers{
     margin-top: 70px;
 }
 
-.testimonials ul{
+.teamMembers ul{
     /*margin-top: 70px;*/
     list-style: none;
 }
 
-.testimonials ul li{
+.teamMembers ul li{
     display: block;
     float: left;
     /*margin-left: 80px;*/
     width: 100%;
 }
 
-.testimonials ul li:first-child{
+.teamMembers ul li:first-child{
     margin-left: 0;
 }
 
-.testimonials ul li .quotes{
+.teamMembers ul li .quotes{
     margin-right: 10px;
 }
 
-.testimonials ul li p{
+.teamMembers ul li p{
     color: #838181;
     font-family: "raleway-regular";
     font-size: 16px;
@@ -464,7 +464,7 @@ header.dark nav ul li a:hover{
     position: relative;
 }
 
-.testimonials ul li p .triangle{
+.teamMembers ul li p .triangle{
     display: block;
     width: 10px;
     height: 5px;
@@ -474,11 +474,11 @@ header.dark nav ul li a:hover{
     left: 40px;
 }
 
-.testimonials ul li .client{
+.teamMembers ul li .client{
     margin-left: 20px;
 }
 
-.testimonials ul li .client img.avatar{
+.teamMembers ul li .client img.avatar{
     float: left;
     margin-right: 20px;
     -webkit-border-radius: 100px;
@@ -487,11 +487,11 @@ header.dark nav ul li a:hover{
     border-radius: 800px;
 }
 
-.testimonials ul li .client .client_details{
+.teamMembers ul li .client .client_details{
     float: left;
 }
 
-.testimonials ul li .client .client_details h4{
+.teamMembers ul li .client .client_details h4{
     color: #7b7979;
     font-family: "raleway-semibold";
     font-size: 14px;
@@ -499,7 +499,7 @@ header.dark nav ul li a:hover{
     margin: 0 0 10px 0;
 }
 
-.testimonials ul li .client .client_details h5{
+.teamMembers ul li .client .client_details h5{
     color: #7b7979;
     font-family: "raleway-regular";
     font-size: 12px;

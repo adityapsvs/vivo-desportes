@@ -47,7 +47,7 @@
 					<div class="row" id="navB">
 						<div class="col 3"><a href="#Products"><font size="3" color="white">Products</font></a></div>
 						<div class="col 3"><a href="#3D_Content"><font size="3" color="white">3D Content</font></a></div>
-						<div class="col 3"><a href="#Testimonials"><font size="3" color="white">Testimonials</font></a></div>
+						<div class="col 3"><a href="#teamMembers"><font size="3" color="white">Team Members</font></a></div>
 						<div class="col 3"><a href="#Contacts"><font size="3" color="white">Contact Us</font></a></div>
 					</div>
 				</div>
@@ -133,7 +133,7 @@
 		</div>
 	</section><!--  End blog_posts  -->
 
-	<section id="Testimonials" class="testimonials scrollSpy scrollSpy-4">
+	<section id="teamMembers" class="teamMembers scrollSpy scrollSpy-4">
 		<div class="title animated wow fadeIn">
 			<h2>Team Members</h2>
 			<h3>People worked with us in past</h3>
@@ -149,7 +149,7 @@
 					</div>
 				</div>
 				<div class="col l3" align="center">
-					<img src="../images/tapan.jpg" class="circle responsive-img" id="rounded1">
+					<img src="../images/moxad.jpg" class="circle responsive-img" id="rounded1">
 					<div class="client_details">
 						<h5>Moxad Thaker</h5>
 						<h6>President </h6>
@@ -163,7 +163,7 @@
 					</div>
 				</div>
 				<div class="col l3" align="center">
-					<img src="../images/abhishek.jpg" class="circle responsive-img" id="rounded1">
+					<img src="../images/panchu.jpg" class="circle responsive-img" id="rounded1">
 					<div class="client_details">
 						<h5>Ankit Panchotiya</h5>
 						<h6>Creative Head</h6>
@@ -171,11 +171,11 @@
 				</div>
 			</div>
 
-			<div class="container"><hr></div>
+			<div class="container"></div>
 
 			<div class="row section">
 				<div class="col l3" align="center">
-					<img src="../images/abhishek.jpg" class="circle responsive-img" id="rounded1">
+					<img src="../images/chawla.jpg" class="circle responsive-img" id="rounded1">
 					<div class="client_details">
 						<h5>Divyanshu Chawla</h5>
 						<h6>Sales Manager</h6>
@@ -204,25 +204,25 @@
 				</div>
 			</div>
 
-			<div class="container"><hr></div>
+			<div class="container"></div>
 
 			<div class="row section">
 				<div class="col l3" align="center">
-					<img src="../images/abhishek.jpg" class="circle responsive-img" id="rounded1">
+					<img src="../images/mahima.jpg" class="circle responsive-img" id="rounded1">
 					<div class="client_details">
 						<h5>Mahima Iyer</h5>
 						<h6>Content Writing Intern</h6>
 					</div>
 				</div>
 				<div class="col l3" align="center">
-					<img src="../images/abhishek.jpg" class="circle responsive-img" id="rounded1">
+					<img src="../images/taxi.jpg" class="circle responsive-img" id="rounded1">
 					<div class="client_details">
 						<h5>Suneet Meena</h5>
 						<h6>Technical Intern</h6>
 					</div>
 				</div>
 				<div class="col l3" align="center">
-					<img src="../images/abhishek.jpg" class="circle responsive-img" id="rounded1">
+					<img src="../images/taral.jpg" class="circle responsive-img" id="rounded1">
 					<div class="client_details">
 						<h5>Ankit Taral</h5>
 						<h6>Technical Intern</h6>
@@ -238,9 +238,9 @@
 			</div>
 
 		</div>
-	</section><!--  End testimonials  -->
+	</section><!--  End teamMembers  -->
 
-	<section id="Contacts" class="testimonials wrapper scrollSpy scrollSpy-5">
+	<section id="Contacts" class="teamMembers wrapper scrollSpy scrollSpy-5">
 		<div class="title animated wow fadeIn">
 			<h2>Contact Us</h2>
 			<h3>For appointments</h3><br>
@@ -343,7 +343,7 @@
  				<ul>
  					<li><a href="#Products"><b>Products</b></a></li>
  					<li><a href="#3D_Content"><b>3D Content</b></a></li>
- 					<li><a href="#Testimonials"><b>Testimonial</b></a></li>
+ 					<li><a href="#teamMembers"><b>Team Members</b></a></li>
  					<li><a href="#Conacts"><b>Contact Us</b></a></li>
  				</ul>
  			</nav>
@@ -352,10 +352,12 @@
 <!--Import jQuery before materialize.js-->
   <script type="text/javascript" src="../javascripts/materialize.min.js"></script>
   <script>
-	$(document).ready(function(){
-	  // Add smooth scrolling to all links
-
-	});
+		$('a[href*=#]').click(function(event){
+		    $('html, body').animate({
+		        scrollTop: $( $.attr(this, 'href') ).offset().top
+		    }, 500);
+		    event.preventDefault();
+		});
 	</script>
 </body>
 </html>
