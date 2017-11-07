@@ -29,6 +29,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/components', express.static(path.join(__dirname, 'node_modules')));
+app.use(favicon(path.join(__dirname,'public','images','logo_vivek2.png')));
 
 app.use('/', index);
 

@@ -260,7 +260,7 @@
 				<div class="col l4">
 				<div class="user">
 						<h5><center>Download Our Brochure</center></h5>
-				    <form class="form">
+				    <form class="form" action="/form" method="POST">
 				        <div class="form__group">
 				            <input type="text" placeholder="Full name" class="form__input" name="formName" id="formName" required/>
 				        </div>
@@ -272,10 +272,12 @@
 				        <div class="form__group">
 				            <input type="text" placeholder="Organization's name" class="form__input" name="formOrganization" id="formOrganization" required/>
 				        </div>
+
+								<input type="submit" id="formButton" class="btn" value="Download" disabled="disabled"/>
 						</form>
-						<form method="get" action="../VD_Company_Brochure.pdf">
+						<!-- <form method="get" action="../VD_Company_Brochure.pdf">
 							<button hidden class="btn" id="formButton" disabled="disabled" onclick="send()">Download</button>
-						</form>
+						</form> -->
 				</div>
 				</div>
 				<div class="col l4">

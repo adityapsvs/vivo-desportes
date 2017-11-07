@@ -128,7 +128,7 @@ h5, h6          { font-weight: bolder }
     background-image: url("../images/billboard.jpg");
 
     /* Set a specific height */
-    height: 690px;
+    height: 100vh;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;

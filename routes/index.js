@@ -10,15 +10,14 @@ router.get('/', function(req, res, next) {
 });
 
 router.post('/form', (req, res, next) => {
-  // console.log('Entered askdja;klasvkdnsdsnnvjadsnfjnasdjvadjsnfwenujnudsvnj j');
   var user = new User();
   user.userDetails = {};
-  user.userDetails.fullName = req.body.fullName;
-  user.userDetails.email = req.body.email;
-  user.userDetails.organization = req.body.organization;
+  user.userDetails.fullName = req.body.formName;
+  user.userDetails.email = req.body.formEmail;
+  user.userDetails.organization = req.body.formOrganization;
   user.save();
-  res.send('Thanks')
-  // res.redirect('/html/index.html');
+  var file = __dirname+'/../public/VD_Company_Brochure.pdf';
+  res.download(file);
 })
 
 module.exports = router;
