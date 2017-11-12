@@ -683,48 +683,54 @@ header.dark nav ul li a:hover{
 footer{
     /*padding: px 0;*/
     overflow: hidden;
+    /*height: 80px;*/
 }
 
 footer .footer_logo{
-    /*float: center;*/
-    /*margin: -10px;*/
-    /*padding-left: 5%;*/
+    float: center;
+    padding-bottom: 20%;
 }
 
 footer .rights p{
-    padding-top: 23px;
-    padding-left: 90px;
+    /*padding-top: 23px;
+    padding-left: 90px;*/
     float: left;
-    color: ;
     font-family: "raleway-regular";
-    font-size: 13px;
-    margin: 5px 0 0 40px;
+    font-size: 2vmin;
+    /*padding-top: 10%*/
+    /*font-size: 13px;*/
+    /*margin: 5px 0 0 40px;*/
 }
 
 footer .rights p a{
-    color: #777;
+    /*color: #777;*/
     font-family: "raleway-semibold";
-    font-size: 13px;
+    /*font-size: 13px;*/
     font-weight: bold;
     text-decoration: none;
 }
 
-footer nav ul{
+/*footer nav ul{
     float: right;
     overflow: hidden;
     list-style: none;
-    /*margin-top: 5px; */
-}
+    margin-top: 5px;
+}*/
 
-footer nav ul li{
+/*footer nav ul li{
     float: left;
-    /*margin-left: 25px;*/
-}
+    margin-left: 25px;
+}*/
 
-footer nav ul li a{
+footer .footer_nav{
+  font-family: "raleway-regular";
+  color: #ffffff;
+  font-size: 2.5vmin;
+}
+footer ul li a{
     color: #444444;
     font-family: "raleway-regular";
-    font-size: 13px;
+    /*font-size: 13px;*/
     text-decoration: none;
 
     transition:all .2s linear;
