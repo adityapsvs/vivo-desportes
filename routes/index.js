@@ -16,8 +16,7 @@ router.post('/form', (req, res, next) => {
   user.userDetails.email = req.body.formEmail;
   user.userDetails.organization = req.body.formOrganization;
   user.save();
-  var file = __dirname+'/../public/VD_Company_Brochure.pdf';
-  res.download(file);
+  res.redirect('/html/index.html');
 })
 
 module.exports = router;
