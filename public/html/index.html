@@ -6,10 +6,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="../css/reset.css?v=1">
-		<link rel="stylesheet" type="text/css" href="../css/fancybox-thumbs.css?v=1">
-		<link rel="stylesheet" type="text/css" href="../css/fancybox-buttons.css?v=1">
-		<link rel="stylesheet" type="text/css" href="../css/fancybox.css?v=1">
-		<link rel="stylesheet" type="text/css" href="../css/animate.css?v=1">
 		<link rel="stylesheet" type="text/css" href="../css/main.css?v=1">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 		<link rel="stylesheet" type="text/css" href="../css/materialize.min.css?v=1"  media="screen,projection"/>
@@ -18,11 +14,6 @@
 		<script type="text/javascript" src="../javascripts/jquery.js?v=1"></script>
 		<script type="text/javascript" src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 		<script type="text/javascript" src="../javascripts/materialize.min.js?v=1"></script>
-	  <script type="text/javascript" src="../javascripts/fancybox.js?v=1"></script>
-	  <script type="text/javascript" src="../javascripts/fancybox-buttons.js?v=1"></script>
-	  <script type="text/javascript" src="../javascripts/fancybox-media.js?v=1"></script>
-	  <script type="text/javascript" src="../javascripts/fancybox-thumbs.js?v=1"></script>
-	  <script type="text/javascript" src="../javascripts/wow.js?v=1"></script>
 	  <script type="text/javascript" src="../javascripts/main.js?v=1"></script>
 		<script src="//www.youtube.com/player_api"></script>
 
@@ -32,14 +23,14 @@
 
 		<div class="outer">
 			<nav>
-				<div class="nav-wrapper black nav_change">
-					<a href="#" class="brand-logo"><img class="logo" src="../images/logo_vivek2.png" height="45" width="90" alt=""/></a>
+				<div class="nav-wrapper black">
+					<a href="#" class="brand-logo"><img class="logo" src="../images/logo_vivek2.png" height="50" width="90" alt=""/></a>
 					<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
 					<ul class="right hide-on-med-and-down" id="navB">
-						<li><a href="#Products"><font size="3" color="white">Products</font></a></li>
-						<li><a href="#3D_Content"><font size="3" color="white">3D Content</font></a></li>
-						<li><a href="#teamMembers"><font size="3" color="white">Team</font></a></li>
-						<li><a href="#Contacts"><font size="3" color="white">Contact Us</font></a></li>
+						<li><a href="#Products"><font size="3" color="white"><b>Products</b></font></a></li>
+						<li><a href="#3D_Content"><font size="3" color="white"><b>3D Content</b></font></a></li>
+						<li><a href="#teamMembers"><font size="3" color="white"><b>Team</b></font></a></li>
+						<li><a href="#Contacts"><font size="3" color="white"><b>Contact Us</b></font></a></li>
 					</ul>
 					<ul class="side-nav" id="mobile-demo">
 						<li><a href="#Products"><font size="3" color="black">Products</font></a></li>
@@ -48,19 +39,12 @@
 						<li><a href="#Contacts"><font size="3" color="black">Contact Us</font></a></li>
 					</ul>
 				</div>
-				<div class="col hide-on-med-and-down">
-					<style media="screen">
-						.nav_change{
-							padding-top: 2%;
-						}
-					</style>
-				</div>
 			</nav>
 		</div>
 
 		<div class="inner">
 			<div class="video-container">
-				<video autoplay loop muted id="video-bg">
+				<video autoplay="autoplay" loop muted poster="../images/logo_vivek2.png?v=1" id="video-bg">
 					<source src="../images/vivo_video.mp4?v=1" type="video/mp4"/>
 					<source src="../images/vivo_video.webm?v=1" type="video/webm"/>
 					<source src="../images/vivo_video.ogv?v=1" type="video/ogg"/>
@@ -80,7 +64,7 @@
 						<img class="icon" src="../images/gifit_1505805495329.gif" alt=""/>
 					</div>
 					<div class="product_description" align="center">
-						<p class="heading">Single sided hologram</p>
+						<p class="heading">VD Mono</p>
 						<p>Square Display<br>
 							7" Viewing display<br>
 							Touch control<br>
@@ -105,11 +89,11 @@
 						<img class="icon" src="../images/gifit_1509344036786.gif" alt=""/>
 					</div>
 					<div class="product_description" align="center">
-						<p class="heading">Three sided hologram</h2>
-						<p>270 Viewing Display<br>
-							Touch Control<br>
-							Gesture Control<br>
-							Centralized control<br>
+						<p class="heading">VD Mono Z</h2>
+						<p>Sleek Design<br>
+							portable<br>
+							Floating Display<br>
+							Centralized Remote control<br>
 						</p>
 					</div>
 				</div>
@@ -118,7 +102,7 @@
 						<img class="icon" src="../images/gifit_1497534800829-min.gif" alt=""/>
 					</div>
 					<div class="product_description" align="center">
-						<p class="heading">Three sided hologram</p>
+						<p class="heading">VD Impact</p>
 						<p>270 Viewing Display<br>
 							Touch Control<br>
 							Gesture Control<br>
@@ -149,8 +133,8 @@
                 var player;
                 function onYouTubeIframeAPIReady() {
                   player = new YT.Player('player', {
-                    // height: '300px',
-                    // width: '70%',
+                    // height: auto,
+                    // width: auto,
                     videoId: 'Y5iyG8EoYbw',
                     rel:'0',
 										controls: 0,
@@ -360,7 +344,7 @@
 						        <div class="form__group">
 					          	<input type="text" placeholder="Organization's name" class="form__input" name="formOrganization" id="formOrganization" required/>
 						        </div>
-										<button class="btn waves-effect waves-light" onclick="formSubmit()" name="action" id="formButton" disabled>Submit</button>
+										<button class="btn waves-effect waves-light" onclick="formSubmit()" name="action" id="formButton" disabled>Download</button>
 									</form>
 								</div>
 							</div>
@@ -453,6 +437,6 @@
 				</div>
 			</div>
 		</footer>
-		
+
 	</body>
 </html>
