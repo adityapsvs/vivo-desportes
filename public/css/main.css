@@ -35,7 +35,9 @@
 
 }
 
-
+nav{
+  background-color: transparent !important;
+}
 
 /*  General CSS*/
 
@@ -63,7 +65,7 @@ h5, h6          { font-weight: bolder }
 }
 
 .inner {
-  position: absolute;
+  /*position: absolute;*/
 }
 
 #video-bg {
@@ -76,6 +78,8 @@ h5, h6          { font-weight: bolder }
   margin-right: auto;
   /*background-size: cover;*/
   display: block;
+  background: transparent url("../images/logo_vivek2.png");
+  background-size: cover;
 }
 
 .video-container {
@@ -85,11 +89,13 @@ h5, h6          { font-weight: bolder }
   position: relative;
   top: 0;
   right: 0;
-  z-index: -100;
+  z-index: -1;
 }
 
 #Products {
-  padding-top: 60%;
+  /*padding-top: 60%;*/
+  /*position: fixed;*/
+  /*top: 100%;*/
 }
 
 #Products .img_container{
