@@ -37,6 +37,9 @@
 
 nav{
   background-color: transparent !important;
+  box-shadow: none !important;
+  position: absolute;
+  top: 0;
 }
 
 /*  General CSS*/
@@ -70,29 +73,31 @@ h5, h6          { font-weight: bolder }
 
 #video-bg {
   top: 0;
-  position: relative;
+  /*position: relative;*/
   width: 100%;
   left: 0;
   right: 0;
-  margin-left: auto;
-  margin-right: auto;
-  /*background-size: cover;*/
-  display: block;
-  background: transparent url("../images/logo_vivek2.png");
+  /*margin-left: auto;*/
+  /*margin-right: auto;*/
   background-size: cover;
+  /*display: block;*/
+  /*background: transparent url("../images/logo_vivek2.png");*/
 }
 
 .video-container {
-  width: 100vw;
-  /*max-height: 600px;*/
+  max-height: 100%;
   overflow: hidden;
-  position: relative;
+  /*position: relative;*/
   top: 0;
   right: 0;
+  left: 0;
+  /*margin-left: auto;*/
+  /*margin-right: auto;*/
   z-index: -1;
-}
+  width: 100%;
+  height: auto;
+  background-size: cover;
 
-#Products {
 }
 
 #Products .img_container{
@@ -285,9 +290,9 @@ h5, h6          { font-weight: bolder }
 
 /*    footer    */
 .vl{
-    border-left: 3px solid grey;
-    height: 100px;
-    margin-top: 50px;
+    border-left: 1px solid grey;
+    height: 200px;
+    margin-top: 5px;
 }
 
 #tunnel{
